@@ -1,0 +1,80 @@
+-------Without optimization-------
+Naive implementation:
+sum=87174213979546353664 time=16.049756
+
+ Performance counter stats for './v1':
+
+       142 805 716      cache-misses                                                
+
+      16,121460439 seconds time elapsed
+
+      16,088129000 seconds user
+       0,027993000 seconds sys
+
+
+Transposed right matrix:
+sum=87174213979546353664 time=12.509970
+
+ Performance counter stats for './v2':
+
+       139 392 671      cache-misses                                                
+
+      12,570529565 seconds time elapsed
+
+      12,543725000 seconds user
+       0,023999000 seconds sys
+
+
+Block matrix:
+sum=87174213979546353664 time=6.820827
+
+ Performance counter stats for './v3':
+
+         4 295 383      cache-misses                                                
+
+       6,966159697 seconds time elapsed
+
+       6,949732000 seconds user
+       0,015994000 seconds sys
+
+
+------O3 optimization----------
+Naive implementation:
+sum=87174213979546353664 time=3.332022
+
+ Performance counter stats for './v1':
+
+       140 334 013      cache-misses                                                
+
+       3,356951530 seconds time elapsed
+
+       3,335258000 seconds user
+       0,020019000 seconds sys
+
+
+Transposed right matrix:
+sum=87174213979546353664 time=1.870590
+
+ Performance counter stats for './v2':
+
+       129 790 431      cache-misses                                                
+
+       1,890100397 seconds time elapsed
+
+       1,869311000 seconds user
+       0,019971000 seconds sys
+
+
+Block matrix:
+sum=87174213979546353664 time=0.954807
+
+ Performance counter stats for './v3':
+
+         3 809 051      cache-misses                                                
+
+       0,978750894 seconds time elapsed
+
+       0,962445000 seconds user
+       0,016040000 seconds sys
+
+
